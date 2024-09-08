@@ -1,0 +1,123 @@
+
+body {
+    background-image: url(bgimage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+.resume {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-1 {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.image-right img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: right;
+}
+
+.education {
+    font-size: 0.95rem;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.skills {
+    margin-right: 10px;
+    font-size: 0.95rem;
+}
+
+.work-exp{
+    margin-right: 10px;
+    font-size: 0.95rem;
+}
+
+#toggle-skills {
+    padding: 10px 20px;
+    background-color: rgb(170, 145, 153);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .resume {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    #toggle-skills {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #toggle-skills {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
